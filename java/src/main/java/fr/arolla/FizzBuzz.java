@@ -16,7 +16,7 @@ public class FizzBuzz {
    * else
    * return the number a string
    */
-  public static String fizzBuzzGame(int number) {
+  public static String fizzBuzz(int number) {
     String result;
     if (number % 3 == 0 && number % 5 == 0) {
       result = "fizzbuzz";
@@ -33,7 +33,7 @@ public class FizzBuzz {
 
   public static void main(String[] args) {
     for (int i = 1; i <= 100; i++) {
-      String res = fizzBuzzGame(i);
+      String res = fizzBuzz(i);
       System.out.format("%d -> %s\n", i, res);
     }
   }
