@@ -17,18 +17,15 @@ public class FizzBuzz {
    * return the number a string
    */
   public static String fizzBuzz(int number) {
-    String result;
     if (number % 3 == 0 && number % 5 == 0) {
-      result = "fizzbuzz";
+      return "fizzbuzz";
     } else if (number % 3 == 0) {
-      result = "fizz";
+      return "fizz";
     } else if (number % 5 == 0) {
-      result = "buzz";
+      return "buzz";
     } else {
-      result = Integer.toString(number);
+      return Integer.toString(number);
     }
-
-    return result;
   }
 
   public static void main(String[] args) {
