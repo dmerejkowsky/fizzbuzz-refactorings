@@ -5,7 +5,7 @@ public class FizzBuzz {
   /**
    * Implements the fizzbuzz game
    *
-   * @param x the number
+   * @param number the number
    * @return the output
    * if number is divisible by 3:
    * return "fizz"
@@ -16,16 +16,16 @@ public class FizzBuzz {
    * else
    * return the number a string
    */
-  public static String fizzBuzzGame(int x) {
+  public static String fizzBuzzGame(int number) {
     String result;
-    if (x % 3 == 0 && x % 5 == 0) {
+    if (number % 3 == 0 && number % 5 == 0) {
       result = "fizzbuzz";
-    } else if (x % 3 == 0) {
+    } else if (number % 3 == 0) {
       result = "fizz";
-    } else if (x % 5 == 0) {
+    } else if (number % 5 == 0) {
       result = "buzz";
     } else {
-      result = Integer.toString(x);
+      result = Integer.toString(number);
     }
 
     return result;
