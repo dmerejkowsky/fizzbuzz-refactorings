@@ -17,13 +17,16 @@ public class FizzBuzz {
    * return the number a string
    */
   public static String fizzBuzz(int number) {
-    if (number % 3 == 0 && number % 5 == 0) {
+    boolean divisibleBy3 = number % 3 == 0;
+    boolean divisibleBy5 = number % 5 == 0;
+
+    if (divisibleBy3 && divisibleBy5) {
       return "fizzbuzz";
     }
-    if (number % 3 == 0) {
+    if (divisibleBy3) {
       return "fizz";
     }
-    if (number % 5 == 0) {
+    if (divisibleBy5) {
       return "buzz";
     }
 
